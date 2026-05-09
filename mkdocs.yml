@@ -1,0 +1,59 @@
+site_name: jaaiworks
+site_url: https://jaaiworks.org
+site_description: A showcase of apps built with jaaicode.
+repo_url: https://github.com/tomz/jaaiworks-site
+repo_name: tomz/jaaiworks-site
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Submit: submit.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/tomz/jaaiworks-site
+    - icon: fontawesome/solid/globe
+      link: https://jaaicode.org
+      name: jaaicode.org
